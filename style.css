@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0 auto;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.cart {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  max-width: 20rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+section {
+  padding: 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  gap: 2rem;
+}
+
+.shape {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 2rem;
+  flex-grow: 1;
+}
+
+h2 {
+  color: hsl(0deg, 0%, 95%);
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2rem;
+}
+
+img {
+  width: 4rem;
+  height: auto;
+}
+
+section p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 0.9375rem;
+}
+
+.plus {
+  display: none;
+}
+
+a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  white-space: nowrap;
+  line-height: 1.5;
+  padding: 0.6rem 2rem;
+  background: hsl(0deg, 0%, 95%);
+  text-decoration: none;
+  border-radius: 2rem;
+  border: solid 2px hsl(0deg, 0%, 95%);
+  margin-bottom: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+section:nth-child(1) {
+  background: hsl(31deg, 77%, 52%);
+}
+
+section:nth-child(1) a {
+  color: hsl(31deg, 77%, 52%);
+}
+section:nth-child(1) a:hover {
+  color: hsl(0deg, 0%, 95%);
+  background: hsl(31deg, 77%, 52%);
+}
+
+section:nth-child(2) {
+  background: hsl(184deg, 100%, 22%);
+}
+
+section:nth-child(2) a {
+  color: hsl(184deg, 100%, 22%);
+}
+section:nth-child(2) a:hover {
+  color: hsl(0deg, 0%, 95%);
+  background: hsl(184deg, 100%, 22%);
+}
+
+section:nth-child(3) {
+  background: hsl(179deg, 100%, 13%);
+}
+
+section:nth-child(3) a {
+  color: hsl(179deg, 100%, 13%);
+}
+section:nth-child(3) a:hover {
+  color: hsl(0deg, 0%, 95%);
+  background: hsl(179deg, 100%, 13%);
+}
+
+@media screen and (min-width: 42rem) {
+  .cart {
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: none;
+  }
+  section {
+    min-height: 31.25rem;
+    min-width: 16rem;
+  }
+}
+@media screen and (min-width: 62.5rem) {
+  .cart {
+    max-width: 67rem;
+  }
+}
+@media screen and (max-width: 18.75rem) {
+  .lm {
+    display: none;
+  }
+  .plus {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  a {
+    padding: 0.5rem 1rem;
+    line-height: 1;
+    align-self: center;
+  }
+  section {
+    padding: 1.5rem 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
